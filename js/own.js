@@ -10,7 +10,7 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 // E-mail contact
 
-function sendEmail() {
+/*function sendEmail() {
   var nameInput = document.getElementById("contact-name");
   var emailInput = document.getElementById("contact-email");
   var phoneInput = document.getElementById("contact-phone");
@@ -43,4 +43,38 @@ function sendEmail() {
     alert("Please fill in all fields.");
   }
 }
-document.getElementById("contact-form").addEventListener("submit", sendEmail);
+document.getElementById("contact-form").addEventListener("submit", sendEmail);*/
+
+const contactForm = document.querySelector("#contact-form");
+const submitBtn = document.querySelector(".submit-btn");
+const nameInput = document.querySelector("#contact-name");
+const phoneInput = document.querySelector("#contact-phone");
+const emailInput = document.querySelector("#contact-email");
+const messageInput = document.querySelector("#contact-message");
+
+const publicKey = "zKVk7OlXiFu9FiAnK";
+const serviceID = "service_13qr418"
+const templateID = "template_eln9afr"
+
+emailjs.init(publicKey);
+contactForm.addEventListener("submit", e => {
+  e.preventDefault();
+
+  submitBtn.innerText = "Just a moment...";
+  const inputFields = {
+    name:nameInput.value,
+    phone:phoneInput.value,
+    email:emailInput.value,
+    message:messageInput.value
+  }
+  emailjs.send(serviceID,templateID,inputFields).then(() => {
+    submitBtn.innerText = "Message sent successfully";
+    nameInput.value = "";
+    phoneInput.value = "";
+    emailInput.value = "";
+    messageInput.value = "";
+  },(error) => {
+    console.log(error);
+    submitBtn.innerText = "Something went wrong";
+  });
+});
