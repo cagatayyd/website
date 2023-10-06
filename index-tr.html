@@ -138,20 +138,30 @@
     <h1 class="text-center contacthead mt-4">
       <i class="fa-solid fa-headset"></i> İletişime <y style="color:rgb(86, 5, 162);">Geç</y> 
     </h1>
-  <center>
-    <div class="mt-4 contact-div row col-sm-10 mb-5">
-      <img src="imgs/you got it boss.png" class="col-sm-5 rounded float-start" alt="...">
-    <div class="mb-3 col-md-5">
-  <input type="text" required placeholder=" &#xf406; Adınız" id="contact-name" style="font-family:Roboto, FontAwesome" name="user_name" class="form-control mt-5  inputinner" id="exampleFormControlInput1">
-  <input type="email" name="user_email" class="form-control mt-4 inputinner" id="exampleFormControlInput1" placeholder=" &#xf0e0; E-mail" id="contact-email" style="font-family:Roboto, FontAwesome">
-  <input type="text" name="user_phone" class="form-control mt-4 inputinner" id="exampleFormControlInput1" required placeholder=" &#xf095; Telefon Numaranız" id="contact-phone" style="font-family:Roboto, FontAwesome">
-  <textarea id="contact-message" name="user_message"  class="form-control mt-4 inputinner" id="exampleFormControlTextarea1" rows="3" required placeholder=" &#xf075; Mesajınız" id="message" style="font-family:Roboto, FontAwesome"></textarea>
-  <button class="submitBut mb-4 mt-5" type="submit" id="contact-submit">
-    Gönder <i class="fa-solid fa-paper-plane"></i>
-  </button>
-    </div>
-    </div>
-  </center>
+    <center>
+      <form id="contact-form">
+      <div class="mt-4 contact-div row col-sm-10 mb-5">
+        <img src="imgs/you got it boss.png" class="col-sm-5 rounded float-start" alt="...">
+      <div class="mb-3 col-md-5" >
+        <div class="form-group">
+          <input type="text" required placeholder=" &#xf406; İsminiz" id="contact-name" name="contact-name" style="font-family:Roboto, FontAwesome"  class="form-control mt-5  inputinner">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control mt-4 inputinner" placeholder=" &#xf0e0; E-mail" name="contact-email" id="contact-email" style="font-family:Roboto, FontAwesome">
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-control mt-4 inputinner" required placeholder=" &#xf095; Telefon Numaranız" name="contact-phone" id="contact-phone" style="font-family:Roboto, FontAwesome">
+        </div>
+        <div class="form-group">
+          <textarea id="contact-message" class="form-control mt-4 inputinner" rows="3" required placeholder=" &#xf075; Mesajınız" id="contact-message" style="font-family:Roboto, FontAwesome"></textarea>
+        </div>
+    <button class="submitBut mb-4 mt-5 submit-btn" type="submit">
+      Gönder <i class="fa-solid fa-paper-plane"></i>
+    </button>
+      </div>
+        </form>
+      </div>
+    </center>
   </div>
 </div>
 </div>
