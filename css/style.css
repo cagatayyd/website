@@ -215,7 +215,7 @@ canvas{
   margin-left: 5px !important;
 }
 .nav-link:hover{
-  border-bottom: 2px solid rgb(4, 4, 54) !important;
+  border-bottom: 1px solid rgb(4, 4, 54) !important;
   transition: 1s;
 }
 
@@ -301,7 +301,7 @@ canvas{
 }
 .biot{
   color:rgb(4, 4, 54);
-  font-size: 17px;
+  font-size: 20px;
 }
 .bio{
   font-family: 'Roboto', sans-serif;
@@ -311,7 +311,7 @@ canvas{
   text-decoration: none;
   color: #000;
   transition: 1s;
-  font-size: 17px;
+  font-size: 18px;
 }
 .bioimg{
   width: 500px !important;
@@ -349,7 +349,7 @@ canvas{
     transition: 500ms;
 }
 .resume:hover i{
-  transform: translateX(.25rem);
+  transform: translateX(.50rem);
   transition: 500ms;
 }
 @media only screen and (max-width:500px){
