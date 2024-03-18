@@ -479,6 +479,21 @@ canvas{
   color: rgb(34, 109, 0);
 }
 
+/* projects */
+
+.projects{
+  background-color: rgb(86, 5, 162);
+  position: block;
+}
+@media only screen and (max-width:500px){
+  .project-card{
+    max-width: 250px !important;
+  }
+  .card-parag{
+    display: none;
+  }
+}
+
 /* contact */
 .contact{
   position: block;
