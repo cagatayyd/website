@@ -485,6 +485,9 @@ canvas{
   background-color: rgb(86, 5, 162);
   position: block;
 }
+.project-card{
+  background-color: rgb(229, 236, 251) !important;
+}
 @media only screen and (max-width:500px){
   .project-card{
     max-width: 250px !important;
